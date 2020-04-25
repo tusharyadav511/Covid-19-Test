@@ -17,6 +17,7 @@
 		C12FBB8424546CBA00B52C71 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C12FBB7D24546CB500B52C71 /* BEMCheckBoxGroup.m */; };
 		C12FBB8524546CBA00B52C71 /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C12FBB7E24546CB600B52C71 /* BEMAnimationManager.m */; };
 		C12FBB872454918400B52C71 /* diseaseHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FBB862454918400B52C71 /* diseaseHistory.swift */; };
+		C12FBB892454B13A00B52C71 /* activitySelfAsses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FBB882454B13A00B52C71 /* activitySelfAsses.swift */; };
 		C14BDADF2453041A00A4FB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14BDADE2453041A00A4FB4D /* AppDelegate.swift */; };
 		C14BDAE12453041A00A4FB4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14BDAE02453041A00A4FB4D /* SceneDelegate.swift */; };
 		C14BDAE32453041A00A4FB4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14BDAE22453041A00A4FB4D /* ViewController.swift */; };
@@ -67,6 +68,7 @@
 		C12FBB8024546CB900B52C71 /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
 		C12FBB8124546CBA00B52C71 /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
 		C12FBB862454918400B52C71 /* diseaseHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = diseaseHistory.swift; sourceTree = "<group>"; };
+		C12FBB882454B13A00B52C71 /* activitySelfAsses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activitySelfAsses.swift; sourceTree = "<group>"; };
 		C14BDADB2453041A00A4FB4D /* Covid-19 Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-19 Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14BDADE2453041A00A4FB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C14BDAE02453041A00A4FB4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				C12FBB7924546C6B00B52C71 /* Covid-19 Test-Bridging-Header.h */,
 				C12FBB5D24543BA900B52C71 /* healthSymptoms.swift */,
 				C12FBB862454918400B52C71 /* diseaseHistory.swift */,
+				C12FBB882454B13A00B52C71 /* activitySelfAsses.swift */,
 			);
 			path = "Covid-19 Test";
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				C12FBB8424546CBA00B52C71 /* BEMCheckBoxGroup.m in Sources */,
 				C12FBB57245438CE00B52C71 /* homeBottomNav.swift in Sources */,
 				C12FBB8224546CBA00B52C71 /* BEMCheckBox.m in Sources */,
+				C12FBB892454B13A00B52C71 /* activitySelfAsses.swift in Sources */,
 				C12FBB59245438EA00B52C71 /* covid19UpdatesBottomNav.swift in Sources */,
 				C12FBB8324546CBA00B52C71 /* BEMPathManager.m in Sources */,
 				C14BDAE32453041A00A4FB4D /* ViewController.swift in Sources */,

@@ -249,7 +249,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8lh-bo-Kin" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959" y="717"/>
+            <point key="canvasLocation" x="1084" y="757"/>
+        </scene>
+        <!--SelfAsses-->
+        <scene sceneID="uS3-4K-7Ut">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SelfAsses" id="HeE-Ov-CF3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tj7-zE-JPa"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvV-2C-7Wc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2258" y="757"/>
         </scene>
         <!--Person Details-->
         <scene sceneID="xfO-Ua-xhC">
@@ -528,7 +538,7 @@
                         <outletCollection property="professionCollection" destination="EGX-bj-Iro" collectionClass="NSMutableArray" id="cKO-Rq-3Tf"/>
                         <outletCollection property="professionCollection" destination="fGh-oY-7VD" collectionClass="NSMutableArray" id="UxD-St-vjs"/>
                         <outletCollection property="professionCollection" destination="Dp0-bE-GcW" collectionClass="NSMutableArray" id="qCL-Ff-vRR"/>
-                        <segue destination="b7C-GA-sR9" kind="presentation" identifier="detailBottomNav" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="rBN-Mu-9U8"/>
+                        <segue destination="HeE-Ov-CF3" kind="presentation" identifier="selfAsses" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="AcW-7r-hne"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9E-J3-JIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -539,7 +549,4 @@
     <resources>
         <image name="stay_home" width="1520" height="800"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ENp-lp-bc2"/>
-    </inferredMetricsTieBreakers>
 </document>

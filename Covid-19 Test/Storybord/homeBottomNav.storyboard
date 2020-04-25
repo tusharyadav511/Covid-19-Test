@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dr5-rK-gUQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pRj-L0-D7i">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -8,20 +8,20 @@
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="dQ8-dz-cej">
+        <scene sceneID="1wQ-os-GxE">
             <objects>
-                <navigationController id="dr5-rK-gUQ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="yui-ll-IM3">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                <navigationController id="pRj-L0-D7i" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zA8-fr-BIe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="nCw-Zi-48s" kind="relationship" relationship="rootViewController" id="Lyv-Xu-4BR"/>
+                        <segue destination="nCw-Zi-48s" kind="relationship" relationship="rootViewController" id="LdI-ru-7Vy"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JJr-aq-Skx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GxD-fo-N6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-965" y="62"/>
+            <point key="canvasLocation" x="-1199" y="-145"/>
         </scene>
         <!--Home-->
         <scene sceneID="ev3-cP-1t8">
@@ -36,7 +36,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="SZz-Qh-K4L" kind="show" id="DrI-57-pVQ"/>
+                                    <segue destination="SZz-Qh-K4L" kind="presentation" modalPresentationStyle="fullScreen" id="DrI-57-pVQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zB-e9-W5P">
+                                <rect key="frame" x="137" y="474" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="nCw-Zi-48s" eventType="touchUpInside" id="uNu-HG-ICY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,10 +54,23 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="ixD-gE-fWw"/>
                     <navigationItem key="navigationItem" title="Home" id="8h0-aw-Fuy"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="Pqq-ZA-OZ8" kind="presentation" identifier="logout" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="DTh-Dy-3ED"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDa-JB-Xan" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="157.97101449275362" y="61.607142857142854"/>
+            <point key="canvasLocation" x="-317" y="-145"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Et1-ax-Ydg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Pqq-ZA-OZ8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Sgn-sV-95i"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JR8-8S-wJC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-281" y="347"/>
         </scene>
         <!--SelfAsses-->
         <scene sceneID="UKi-AW-cxC">
@@ -59,7 +80,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUI-N6-SvN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="802" y="-97"/>
+            <point key="canvasLocation" x="690" y="-145"/>
         </scene>
     </scenes>
     <resources>

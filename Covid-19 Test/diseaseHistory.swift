@@ -113,6 +113,8 @@ class diseaseHistory: UIViewController ,BEMCheckBoxDelegate  {
     
     @IBAction func next(_ sender: Any) {
         ref.child("disease").setValue(level)
+        self.performSegue(withIdentifier: "nextTravel", sender: nil)
+        
     }
     
     

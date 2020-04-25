@@ -159,7 +159,7 @@ class personDetails: UIViewController , UITextFieldDelegate {
             ageError.text = ""
             genderError.text = ""
             professionalError.text = ""
-            self.performSegue(withIdentifier: "detailBottomNav", sender: nil)
+            self.performSegue(withIdentifier: "selfAsses", sender: nil)
         }
     }
     

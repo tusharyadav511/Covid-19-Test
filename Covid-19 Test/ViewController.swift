@@ -83,7 +83,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
        }
        
        @objc func userLogIn(){
-           self.displayAlertMessage(title: "LogIn", message: "Login")
+          performSegue(withIdentifier: "mainBottomNav", sender: nil)
            self.indicatorViewStop()
        }
        

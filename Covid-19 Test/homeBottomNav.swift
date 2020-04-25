@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class homeBottomNav: UIViewController {
 
@@ -17,6 +18,13 @@ class homeBottomNav: UIViewController {
     }
     
 
+    @IBAction func logout(_ sender: Any) {
+        URLCache.shared.removeAllCachedResponses()
+                  
+        try! Auth.auth().signOut()
+                  
+        self.performSegue(withIdentifier: "logout", sender: self)
+    }
     /*
     // MARK: - Navigation
 

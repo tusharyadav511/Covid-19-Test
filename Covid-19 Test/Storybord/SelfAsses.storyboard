@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FVl-gK-nzp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ri6-rM-mHp">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -7,7 +7,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Symptoms-->
+        <!--Navigation Controller-->
+        <scene sceneID="lqe-hh-sid">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4a-UZ-YuW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="Ri6-rM-mHp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="IJi-Pf-ThA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FVl-gK-nzp" kind="relationship" relationship="rootViewController" id="taW-j2-Gp7"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1039" y="80"/>
+        </scene>
+        <!--COVID-19 Test-->
         <scene sceneID="pxf-WM-6mX">
             <objects>
                 <viewController id="FVl-gK-nzp" customClass="healthSymptoms" customModule="Covid_19_Test" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,14 +32,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you experiencing any of the following symptoms?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsa-Cz-2MP">
-                                <rect key="frame" x="0.0" y="44" width="414" height="58.333333333333343"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="58.333333333333343"/>
                                 <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j15-1g-aXy" customClass="BEMCheckBox">
-                                <rect key="frame" x="20" y="122.33333333333331" width="40" height="40"/>
+                                <rect key="frame" x="20" y="218.33333333333334" width="40" height="40.000000000000028"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ZIS-SK-5Lm"/>
@@ -31,7 +47,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cough" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTi-29-ctf">
-                                <rect key="frame" x="80" y="122.33333333333331" width="314" height="40"/>
+                                <rect key="frame" x="80" y="218.33333333333334" width="314" height="40.000000000000028"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="aHa-xK-Z9s"/>
                                 </constraints>
@@ -40,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJO-5p-Lnr" customClass="BEMCheckBox">
-                                <rect key="frame" x="20" y="182.33333333333334" width="40" height="40"/>
+                                <rect key="frame" x="20" y="278.33333333333331" width="40" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BLM-hZ-6A0"/>
@@ -48,7 +64,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fever" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="On1-q3-fzd">
-                                <rect key="frame" x="80" y="182.33333333333334" width="314" height="40"/>
+                                <rect key="frame" x="80" y="278.33333333333331" width="314" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="0cM-kN-K7i"/>
                                 </constraints>
@@ -57,7 +73,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4J0-mR-6YN" customClass="BEMCheckBox">
-                                <rect key="frame" x="20" y="242.33333333333337" width="40" height="40"/>
+                                <rect key="frame" x="20" y="338.33333333333331" width="40" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="9iW-ZE-qtT"/>
@@ -65,7 +81,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty in Breathing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxd-77-KfW">
-                                <rect key="frame" x="80" y="242.33333333333337" width="314" height="40"/>
+                                <rect key="frame" x="80" y="338.33333333333331" width="314" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="sAa-za-nxs"/>
                                 </constraints>
@@ -74,7 +90,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHh-Mt-jlu" customClass="BEMCheckBox">
-                                <rect key="frame" x="20" y="302.33333333333331" width="40" height="40"/>
+                                <rect key="frame" x="20" y="398.33333333333331" width="40" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="2qw-7A-d4b"/>
@@ -82,7 +98,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None of the Above" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPW-1Z-CdT">
-                                <rect key="frame" x="80" y="302.33333333333331" width="314" height="40"/>
+                                <rect key="frame" x="80" y="398.33333333333331" width="314" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="UBx-Df-OTy"/>
                                 </constraints>
@@ -91,7 +107,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEc-Gk-363">
-                                <rect key="frame" x="60" y="372.33333333333331" width="294" height="53"/>
+                                <rect key="frame" x="60" y="468.33333333333331" width="294" height="52.999999999999943"/>
                                 <color key="backgroundColor" red="0.27706375719999998" green="0.69462215900000002" blue="0.97587424519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
                                 <state key="normal" title="Next">
@@ -133,7 +149,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EW0-To-PBw"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Symptoms" largeTitleDisplayMode="never" id="Tzv-4Z-zgs"/>
+                    <navigationItem key="navigationItem" title="COVID-19 Test" largeTitleDisplayMode="always" id="Tzv-4Z-zgs"/>
                     <connections>
                         <outlet property="cough" destination="j15-1g-aXy" id="0u7-m0-JPy"/>
                         <outlet property="difficultyInBreathing" destination="4J0-mR-6YN" id="Lbl-Sy-iKa"/>
@@ -152,18 +168,18 @@
             <objects>
                 <viewController id="1JU-bV-MTV" customClass="diseaseHistory" customModule="Covid_19_Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R4Y-eU-1ZO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have you ever had any of the following:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o06-Pw-qnN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="58.333333333333336"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="58.333333333333343"/>
                                 <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFa-0e-gSy" customClass="BEMCheckBox">
-                                <rect key="frame" x="20" y="78.333333333333329" width="40" height="40"/>
+                                <rect key="frame" x="20" y="166.33333333333334" width="40" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="mRW-m5-bD6"/>
@@ -171,7 +187,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diabetes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF9-pu-1L8">
-                                <rect key="frame" x="80" y="78.333333333333329" width="314" height="40"/>
+                                <rect key="frame" x="80" y="166.33333333333334" width="314" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6EU-2f-iyW"/>
                                 </constraints>
@@ -180,7 +196,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nx7-w1-XKh" customClass="BEMCheckBox">
-                                <rect key="frame" x="20" y="138.33333333333334" width="40" height="40"/>
+                                <rect key="frame" x="20" y="226.33333333333334" width="40" height="40.000000000000028"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="SN0-LG-zTy"/>
@@ -188,7 +204,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hypertension" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc8-Gz-f6X">
-                                <rect key="frame" x="80" y="138.33333333333334" width="314" height="40"/>
+                                <rect key="frame" x="80" y="226.33333333333334" width="314" height="40.000000000000028"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Wna-DN-IgA"/>
                                 </constraints>
@@ -197,7 +213,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DhI-zC-5v1" customClass="BEMCheckBox">
-                                <rect key="frame" x="20" y="198.33333333333334" width="40" height="40"/>
+                                <rect key="frame" x="20" y="286.33333333333331" width="40" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="hy7-CT-lmP"/>
@@ -205,7 +221,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lung disease" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIJ-dN-2Jm">
-                                <rect key="frame" x="80" y="198.33333333333334" width="314" height="40"/>
+                                <rect key="frame" x="80" y="286.33333333333331" width="314" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="h1V-xa-aRe"/>
                                 </constraints>
@@ -214,7 +230,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y19-4u-Qzm" customClass="BEMCheckBox">
-                                <rect key="frame" x="20" y="258.33333333333331" width="40" height="40"/>
+                                <rect key="frame" x="20" y="346.33333333333331" width="40" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="M3g-TD-Vik"/>
@@ -222,7 +238,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart Disease" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-Nx-OEZ">
-                                <rect key="frame" x="80" y="258.33333333333331" width="314" height="40"/>
+                                <rect key="frame" x="80" y="346.33333333333331" width="314" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="d83-rV-shi"/>
                                 </constraints>
@@ -231,7 +247,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsp-bg-ScG" customClass="BEMCheckBox">
-                                <rect key="frame" x="20" y="318.33333333333331" width="40" height="40"/>
+                                <rect key="frame" x="20" y="406.33333333333331" width="40" height="40"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="MF5-hS-a6e"/>
@@ -239,7 +255,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None of the Above" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7o-e9-maV">
-                                <rect key="frame" x="80" y="318.33333333333331" width="314" height="40"/>
+                                <rect key="frame" x="80" y="406.33333333333331" width="314" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ba5-x8-90m"/>
                                 </constraints>
@@ -248,7 +264,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xt-Ws-Hvh">
-                                <rect key="frame" x="60" y="388.33333333333331" width="294" height="53"/>
+                                <rect key="frame" x="60" y="476.33333333333331" width="294" height="52.999999999999943"/>
                                 <color key="backgroundColor" red="0.27706375719999998" green="0.69462215900000002" blue="0.97587424519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
                                 <state key="normal" title="Next">
@@ -303,11 +319,111 @@
                         <outlet property="lungDisease" destination="DhI-zC-5v1" id="yqy-Ue-Pyf"/>
                         <outlet property="nextScreen" destination="2Xt-Ws-Hvh" id="S8u-d9-ISK"/>
                         <outlet property="noneOfTheAbove" destination="rsp-bg-ScG" id="w15-zA-CXN"/>
+                        <segue destination="mf9-BV-gOC" kind="show" identifier="nextTravel" id="KMF-D4-qsZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vC7-gI-vg2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1113" y="80"/>
+        </scene>
+        <!--Activities-->
+        <scene sceneID="j4V-2S-sha">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyb-fr-fAy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="mf9-BV-gOC" customClass="activitySelfAsses" customModule="Covid_19_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jmo-I0-s2e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which of the following apply to you?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F48-a3-kGQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="65.333333333333314"/>
+                                <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17f-HU-mUo">
+                                <rect key="frame" x="20" y="173.33333333333334" width="374" height="33"/>
+                                <color key="backgroundColor" red="0.27706375719999998" green="0.69462215900000002" blue="0.97587424519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Traveled internationally in the last 14 days">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="travel:" destination="mf9-BV-gOC" eventType="touchUpInside" id="JNl-TI-BP2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently interacted or lived or currently live with someone who has tested positive for COVID-19" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUe-ot-9i8">
+                                <rect key="frame" x="20" y="226.33333333333337" width="374" height="61"/>
+                                <color key="backgroundColor" red="0.27706375719999998" green="0.69462215900000002" blue="0.97587424519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-F8-4Ku">
+                                <rect key="frame" x="20" y="307.33333333333331" width="374" height="33"/>
+                                <color key="backgroundColor" red="0.27706375719999998" green="0.69462215900000002" blue="0.97587424519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Am a healthcare worker">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="worker:" destination="mf9-BV-gOC" eventType="touchUpInside" id="wSa-Jk-nIV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bem-n3-Hou">
+                                <rect key="frame" x="20" y="360.33333333333331" width="374" height="34"/>
+                                <color key="backgroundColor" red="0.27706375719999998" green="0.69462215900000002" blue="0.97587424519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="None of the Above">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="noneOfTheAbove:" destination="mf9-BV-gOC" eventType="touchUpInside" id="yVj-G8-6C4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="P83-PP-4AL" firstAttribute="trailing" secondItem="F48-a3-kGQ" secondAttribute="trailing" id="2gM-0F-wIz"/>
+                            <constraint firstItem="17f-HU-mUo" firstAttribute="leading" secondItem="P83-PP-4AL" secondAttribute="leading" constant="20" id="47J-MN-vSU"/>
+                            <constraint firstItem="P83-PP-4AL" firstAttribute="trailing" secondItem="3hv-F8-4Ku" secondAttribute="trailing" constant="20" id="6pE-U8-B1h"/>
+                            <constraint firstItem="bem-n3-Hou" firstAttribute="leading" secondItem="P83-PP-4AL" secondAttribute="leading" constant="20" id="9X2-Yq-wuH"/>
+                            <constraint firstItem="F48-a3-kGQ" firstAttribute="leading" secondItem="P83-PP-4AL" secondAttribute="leading" id="Aa7-kw-cdm"/>
+                            <constraint firstItem="bem-n3-Hou" firstAttribute="top" secondItem="3hv-F8-4Ku" secondAttribute="bottom" constant="20" id="Mwn-y6-K96"/>
+                            <constraint firstItem="17f-HU-mUo" firstAttribute="top" secondItem="F48-a3-kGQ" secondAttribute="bottom" constant="20" id="Pgy-vC-txa"/>
+                            <constraint firstItem="P83-PP-4AL" firstAttribute="trailing" secondItem="bem-n3-Hou" secondAttribute="trailing" constant="20" id="h6X-bX-hAg"/>
+                            <constraint firstItem="oUe-ot-9i8" firstAttribute="leading" secondItem="P83-PP-4AL" secondAttribute="leading" constant="20" id="jKz-Hy-ONg"/>
+                            <constraint firstItem="F48-a3-kGQ" firstAttribute="top" secondItem="P83-PP-4AL" secondAttribute="top" id="n0P-fx-pgP"/>
+                            <constraint firstItem="P83-PP-4AL" firstAttribute="trailing" secondItem="17f-HU-mUo" secondAttribute="trailing" constant="20" id="n16-Ua-55w"/>
+                            <constraint firstItem="oUe-ot-9i8" firstAttribute="top" secondItem="17f-HU-mUo" secondAttribute="bottom" constant="20" id="r9p-Ly-R18"/>
+                            <constraint firstItem="3hv-F8-4Ku" firstAttribute="top" secondItem="oUe-ot-9i8" secondAttribute="bottom" constant="20" id="rCF-gY-f7Z"/>
+                            <constraint firstItem="P83-PP-4AL" firstAttribute="trailing" secondItem="oUe-ot-9i8" secondAttribute="trailing" constant="20" id="vSz-x2-dpt"/>
+                            <constraint firstItem="3hv-F8-4Ku" firstAttribute="leading" secondItem="P83-PP-4AL" secondAttribute="leading" constant="20" id="x9u-48-35u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="P83-PP-4AL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Activities" id="jDG-pe-jDG"/>
+                    <connections>
+                        <outlet property="healthWorkers" destination="3hv-F8-4Ku" id="9O0-ey-nzY"/>
+                        <outlet property="meatOtherPeople" destination="oUe-ot-9i8" id="Zwy-03-tbQ"/>
+                        <outlet property="nonOfTheAbove" destination="bem-n3-Hou" id="Htc-8S-3YK"/>
+                        <outlet property="travelInternational" destination="17f-HU-mUo" id="SSB-AS-NLf"/>
+                        <segue destination="EkH-S7-Pdb" kind="presentation" identifier="bottomNav" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="cKt-xg-E9P"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2094" y="80"/>
+        </scene>
+        <!--BottomNav-->
+        <scene sceneID="fQp-4l-Bw7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BottomNav" id="EkH-S7-Pdb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oZo-zd-xdA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfz-Dk-ulX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2940" y="62"/>
         </scene>
     </scenes>
 </document>
