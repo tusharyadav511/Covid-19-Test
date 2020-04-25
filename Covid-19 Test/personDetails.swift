@@ -45,7 +45,7 @@ class personDetails: UIViewController , UITextFieldDelegate {
             genderBtn.isHidden = true
         }
         
-        profession.layer.cornerRadius = Gender.frame.height / 2
+        profession.layer.cornerRadius = profession.frame.height / 2
         professionCollection.forEach { (professionBtn) in
             professionBtn.layer.cornerRadius = professionBtn.frame.height / 2
             professionBtn.isHidden = true

@@ -26,7 +26,7 @@
         <!--COVID Updates-->
         <scene sceneID="8Eh-ph-iLP">
             <objects>
-                <viewController id="crv-TF-RhB" sceneMemberID="viewController">
+                <viewController id="crv-TF-RhB" customClass="covid19UpdatesBottomNav" customModule="Covid_19_Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IMN-QH-OC7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FVl-gK-nzp">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Symptoms-->
+        <scene sceneID="pxf-WM-6mX">
+            <objects>
+                <viewController id="FVl-gK-nzp" customClass="healthSymptoms" customModule="Covid_19_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ng-Rd-Bo9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you experiencing any of the following symptoms?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsa-Cz-2MP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="58.333333333333343"/>
+                                <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j15-1g-aXy" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="122.33333333333331" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZIS-SK-5Lm"/>
+                                    <constraint firstAttribute="width" constant="40" id="cVm-r8-j5t"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cough" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTi-29-ctf">
+                                <rect key="frame" x="80" y="122.33333333333331" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aHa-xK-Z9s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJO-5p-Lnr" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="182.33333333333334" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BLM-hZ-6A0"/>
+                                    <constraint firstAttribute="width" constant="40" id="Tyw-Be-ueW"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fever" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="On1-q3-fzd">
+                                <rect key="frame" x="80" y="182.33333333333334" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0cM-kN-K7i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4J0-mR-6YN" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="242.33333333333337" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9iW-ZE-qtT"/>
+                                    <constraint firstAttribute="width" constant="40" id="C9e-cC-Vle"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty in Breathing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxd-77-KfW">
+                                <rect key="frame" x="80" y="242.33333333333337" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sAa-za-nxs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHh-Mt-jlu" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="302.33333333333331" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="2qw-7A-d4b"/>
+                                    <constraint firstAttribute="height" constant="40" id="kmY-Jj-RRD"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None of the Above" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPW-1Z-CdT">
+                                <rect key="frame" x="80" y="302.33333333333331" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UBx-Df-OTy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEc-Gk-363">
+                                <rect key="frame" x="60" y="372.33333333333331" width="294" height="53"/>
+                                <color key="backgroundColor" red="0.27706375719999998" green="0.69462215900000002" blue="0.97587424519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="FVl-gK-nzp" eventType="touchUpInside" id="MY5-TM-lBA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QTi-29-ctf" firstAttribute="leading" secondItem="j15-1g-aXy" secondAttribute="trailing" constant="20" id="03e-i2-Wfz"/>
+                            <constraint firstItem="4J0-mR-6YN" firstAttribute="top" secondItem="LJO-5p-Lnr" secondAttribute="bottom" constant="20" id="0Fs-6a-ziK"/>
+                            <constraint firstItem="Vsa-Cz-2MP" firstAttribute="top" secondItem="EW0-To-PBw" secondAttribute="top" id="1sZ-im-9kV"/>
+                            <constraint firstItem="On1-q3-fzd" firstAttribute="top" secondItem="QTi-29-ctf" secondAttribute="bottom" constant="20" id="4WZ-h4-z2X"/>
+                            <constraint firstItem="mxd-77-KfW" firstAttribute="leading" secondItem="4J0-mR-6YN" secondAttribute="trailing" constant="20" id="5MU-Id-34E"/>
+                            <constraint firstItem="EW0-To-PBw" firstAttribute="trailing" secondItem="mxd-77-KfW" secondAttribute="trailing" constant="20" id="5bp-T5-oaB"/>
+                            <constraint firstItem="EW0-To-PBw" firstAttribute="trailing" secondItem="QTi-29-ctf" secondAttribute="trailing" constant="20" id="6XA-tE-ExE"/>
+                            <constraint firstItem="IHh-Mt-jlu" firstAttribute="top" secondItem="4J0-mR-6YN" secondAttribute="bottom" constant="20" id="73k-2a-ZjI"/>
+                            <constraint firstItem="LJO-5p-Lnr" firstAttribute="top" secondItem="j15-1g-aXy" secondAttribute="bottom" constant="20" id="Hpb-5D-atO"/>
+                            <constraint firstItem="Vsa-Cz-2MP" firstAttribute="trailing" secondItem="EW0-To-PBw" secondAttribute="trailing" id="ML2-Kb-uI2"/>
+                            <constraint firstItem="4J0-mR-6YN" firstAttribute="leading" secondItem="EW0-To-PBw" secondAttribute="leading" constant="20" id="NRm-9E-aqM"/>
+                            <constraint firstItem="EW0-To-PBw" firstAttribute="trailing" secondItem="On1-q3-fzd" secondAttribute="trailing" constant="20" id="Pj1-39-07t"/>
+                            <constraint firstItem="On1-q3-fzd" firstAttribute="leading" secondItem="LJO-5p-Lnr" secondAttribute="trailing" constant="20" id="RbA-Yn-rqE"/>
+                            <constraint firstItem="Vsa-Cz-2MP" firstAttribute="leading" secondItem="EW0-To-PBw" secondAttribute="leading" id="SJR-CH-RXf"/>
+                            <constraint firstItem="KEc-Gk-363" firstAttribute="top" secondItem="DPW-1Z-CdT" secondAttribute="bottom" constant="30" id="Thn-Xz-H6D"/>
+                            <constraint firstItem="IHh-Mt-jlu" firstAttribute="leading" secondItem="EW0-To-PBw" secondAttribute="leading" constant="20" id="Uia-XP-5aa"/>
+                            <constraint firstItem="KEc-Gk-363" firstAttribute="leading" secondItem="EW0-To-PBw" secondAttribute="leading" constant="60" id="VM5-J2-a2h"/>
+                            <constraint firstItem="EW0-To-PBw" firstAttribute="trailing" secondItem="DPW-1Z-CdT" secondAttribute="trailing" constant="20" id="WHN-gF-U48"/>
+                            <constraint firstItem="LJO-5p-Lnr" firstAttribute="leading" secondItem="EW0-To-PBw" secondAttribute="leading" constant="20" id="ZrR-3J-6y6"/>
+                            <constraint firstItem="DPW-1Z-CdT" firstAttribute="top" secondItem="mxd-77-KfW" secondAttribute="bottom" constant="20" id="awf-gL-q6r"/>
+                            <constraint firstItem="QTi-29-ctf" firstAttribute="top" secondItem="Vsa-Cz-2MP" secondAttribute="bottom" constant="20" id="bBI-av-8N9"/>
+                            <constraint firstItem="EW0-To-PBw" firstAttribute="trailing" secondItem="KEc-Gk-363" secondAttribute="trailing" constant="60" id="e6n-Lr-eBs"/>
+                            <constraint firstItem="mxd-77-KfW" firstAttribute="top" secondItem="On1-q3-fzd" secondAttribute="bottom" constant="20" id="eGX-fD-1v8"/>
+                            <constraint firstItem="DPW-1Z-CdT" firstAttribute="leading" secondItem="IHh-Mt-jlu" secondAttribute="trailing" constant="20" id="oSQ-qH-v4g"/>
+                            <constraint firstItem="j15-1g-aXy" firstAttribute="leading" secondItem="EW0-To-PBw" secondAttribute="leading" constant="20" id="rN7-fK-mJ6"/>
+                            <constraint firstItem="j15-1g-aXy" firstAttribute="top" secondItem="Vsa-Cz-2MP" secondAttribute="bottom" constant="20" id="tWG-fr-teu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EW0-To-PBw"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Symptoms" largeTitleDisplayMode="never" id="Tzv-4Z-zgs"/>
+                    <connections>
+                        <outlet property="cough" destination="j15-1g-aXy" id="0u7-m0-JPy"/>
+                        <outlet property="difficultyInBreathing" destination="4J0-mR-6YN" id="Lbl-Sy-iKa"/>
+                        <outlet property="fever" destination="LJO-5p-Lnr" id="2Pg-Dh-KO6"/>
+                        <outlet property="nextButton" destination="KEc-Gk-363" id="UPO-tm-C2V"/>
+                        <outlet property="noneOfTheAbove" destination="IHh-Mt-jlu" id="TJ8-Ey-RnC"/>
+                        <segue destination="1JU-bV-MTV" kind="show" identifier="nextdisease" id="Stn-nK-veY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qzh-Zk-8GE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="80.357142857142847"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WjU-7Z-uPP">
+            <objects>
+                <viewController id="1JU-bV-MTV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R4Y-eU-1ZO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="xe8-SK-iFA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qnm-6x-aNb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vC7-gI-vg2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="90"/>
+        </scene>
+    </scenes>
+</document>
