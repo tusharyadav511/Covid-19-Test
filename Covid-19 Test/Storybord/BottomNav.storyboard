@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ivk-aF-qo6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--homeBottomNav-->
+        <scene sceneID="YeE-nT-xTV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="homeBottomNav" id="Olb-Re-JVe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ROB-Sq-OIm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mQo-xa-y5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1205" y="143"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0FR-27-7r4">
+            <objects>
+                <tabBarController id="ivk-aF-qo6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IXJ-WG-N06">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Olb-Re-JVe" kind="relationship" relationship="viewControllers" id="AS0-je-xes"/>
+                        <segue destination="c3i-MF-0ip" kind="relationship" relationship="viewControllers" id="AOT-US-VQO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gvi-IX-rpD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383" y="-287"/>
+        </scene>
+        <!--covid19Updates-->
+        <scene sceneID="v4Q-ih-uQo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="covid19Updates" id="c3i-MF-0ip" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ey9-PW-rNZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhS-jg-VYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-274" y="143"/>
+        </scene>
+    </scenes>
+</document>
