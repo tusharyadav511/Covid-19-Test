@@ -147,21 +147,167 @@
             </objects>
             <point key="canvasLocation" x="50.724637681159422" y="80.357142857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Disease-->
         <scene sceneID="WjU-7Z-uPP">
             <objects>
-                <viewController id="1JU-bV-MTV" sceneMemberID="viewController">
+                <viewController id="1JU-bV-MTV" customClass="diseaseHistory" customModule="Covid_19_Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R4Y-eU-1ZO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have you ever had any of the following:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o06-Pw-qnN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="58.333333333333336"/>
+                                <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFa-0e-gSy" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="78.333333333333329" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="mRW-m5-bD6"/>
+                                    <constraint firstAttribute="height" constant="40" id="vmi-R3-Puy"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diabetes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF9-pu-1L8">
+                                <rect key="frame" x="80" y="78.333333333333329" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6EU-2f-iyW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nx7-w1-XKh" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="138.33333333333334" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="SN0-LG-zTy"/>
+                                    <constraint firstAttribute="width" constant="40" id="VBI-Rg-VA5"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hypertension" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc8-Gz-f6X">
+                                <rect key="frame" x="80" y="138.33333333333334" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Wna-DN-IgA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DhI-zC-5v1" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="198.33333333333334" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="hy7-CT-lmP"/>
+                                    <constraint firstAttribute="height" constant="40" id="w7W-ga-Su0"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lung disease" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIJ-dN-2Jm">
+                                <rect key="frame" x="80" y="198.33333333333334" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h1V-xa-aRe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y19-4u-Qzm" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="258.33333333333331" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="M3g-TD-Vik"/>
+                                    <constraint firstAttribute="height" constant="40" id="fTd-7R-BPc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart Disease" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-Nx-OEZ">
+                                <rect key="frame" x="80" y="258.33333333333331" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="d83-rV-shi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsp-bg-ScG" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="318.33333333333331" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MF5-hS-a6e"/>
+                                    <constraint firstAttribute="width" constant="40" id="rq3-JN-JSt"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None of the Above" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7o-e9-maV">
+                                <rect key="frame" x="80" y="318.33333333333331" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ba5-x8-90m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xt-Ws-Hvh">
+                                <rect key="frame" x="60" y="388.33333333333331" width="294" height="53"/>
+                                <color key="backgroundColor" red="0.27706375719999998" green="0.69462215900000002" blue="0.97587424519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="1JU-bV-MTV" eventType="touchUpInside" id="GYo-Ak-4gX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xe8-SK-iFA" firstAttribute="trailing" secondItem="bXe-Nx-OEZ" secondAttribute="trailing" constant="20" id="2Z7-64-u99"/>
+                            <constraint firstItem="Y19-4u-Qzm" firstAttribute="top" secondItem="DhI-zC-5v1" secondAttribute="bottom" constant="20" id="8mT-pd-u5g"/>
+                            <constraint firstItem="Nx7-w1-XKh" firstAttribute="leading" secondItem="xe8-SK-iFA" secondAttribute="leading" constant="20" id="BzW-gU-U42"/>
+                            <constraint firstItem="jIJ-dN-2Jm" firstAttribute="leading" secondItem="DhI-zC-5v1" secondAttribute="trailing" constant="20" id="Ekv-hU-Dkg"/>
+                            <constraint firstItem="xe8-SK-iFA" firstAttribute="trailing" secondItem="qc8-Gz-f6X" secondAttribute="trailing" constant="20" id="Fel-7l-Qvx"/>
+                            <constraint firstItem="qc8-Gz-f6X" firstAttribute="leading" secondItem="Nx7-w1-XKh" secondAttribute="trailing" constant="20" id="Ihu-qk-H3m"/>
+                            <constraint firstItem="2Xt-Ws-Hvh" firstAttribute="leading" secondItem="xe8-SK-iFA" secondAttribute="leading" constant="60" id="Ja5-Zw-WRy"/>
+                            <constraint firstItem="DF9-pu-1L8" firstAttribute="leading" secondItem="XFa-0e-gSy" secondAttribute="trailing" constant="20" id="P8Z-Va-FeW"/>
+                            <constraint firstItem="Nx7-w1-XKh" firstAttribute="top" secondItem="XFa-0e-gSy" secondAttribute="bottom" constant="20" id="P9x-Ky-oPf"/>
+                            <constraint firstItem="DhI-zC-5v1" firstAttribute="top" secondItem="Nx7-w1-XKh" secondAttribute="bottom" constant="20" id="PpF-oP-7Xt"/>
+                            <constraint firstItem="xe8-SK-iFA" firstAttribute="trailing" secondItem="2Xt-Ws-Hvh" secondAttribute="trailing" constant="60" id="UzW-Ln-YSb"/>
+                            <constraint firstItem="S7o-e9-maV" firstAttribute="top" secondItem="bXe-Nx-OEZ" secondAttribute="bottom" constant="20" id="WdE-IN-brl"/>
+                            <constraint firstItem="rsp-bg-ScG" firstAttribute="top" secondItem="Y19-4u-Qzm" secondAttribute="bottom" constant="20" id="XZ9-zf-Yzk"/>
+                            <constraint firstItem="Y19-4u-Qzm" firstAttribute="leading" secondItem="xe8-SK-iFA" secondAttribute="leading" constant="20" id="Zar-bm-o98"/>
+                            <constraint firstItem="xe8-SK-iFA" firstAttribute="trailing" secondItem="S7o-e9-maV" secondAttribute="trailing" constant="20" id="a0P-AK-t5R"/>
+                            <constraint firstItem="o06-Pw-qnN" firstAttribute="leading" secondItem="xe8-SK-iFA" secondAttribute="leading" id="cMp-rG-MpX"/>
+                            <constraint firstItem="DF9-pu-1L8" firstAttribute="top" secondItem="o06-Pw-qnN" secondAttribute="bottom" constant="20" id="ciO-eu-a9k"/>
+                            <constraint firstItem="o06-Pw-qnN" firstAttribute="top" secondItem="xe8-SK-iFA" secondAttribute="top" id="egD-Ja-3Ej"/>
+                            <constraint firstItem="xe8-SK-iFA" firstAttribute="trailing" secondItem="DF9-pu-1L8" secondAttribute="trailing" constant="20" id="fdk-LX-KnS"/>
+                            <constraint firstItem="xe8-SK-iFA" firstAttribute="trailing" secondItem="o06-Pw-qnN" secondAttribute="trailing" id="g4C-EZ-PIn"/>
+                            <constraint firstItem="XFa-0e-gSy" firstAttribute="top" secondItem="o06-Pw-qnN" secondAttribute="bottom" constant="20" id="grt-R9-h1b"/>
+                            <constraint firstItem="bXe-Nx-OEZ" firstAttribute="top" secondItem="jIJ-dN-2Jm" secondAttribute="bottom" constant="20" id="iFn-iM-UJC"/>
+                            <constraint firstItem="qc8-Gz-f6X" firstAttribute="top" secondItem="DF9-pu-1L8" secondAttribute="bottom" constant="20" id="k1U-U6-4EO"/>
+                            <constraint firstItem="rsp-bg-ScG" firstAttribute="leading" secondItem="xe8-SK-iFA" secondAttribute="leading" constant="20" id="k3j-WS-q7f"/>
+                            <constraint firstItem="xe8-SK-iFA" firstAttribute="trailing" secondItem="jIJ-dN-2Jm" secondAttribute="trailing" constant="20" id="nMK-QU-lSm"/>
+                            <constraint firstItem="2Xt-Ws-Hvh" firstAttribute="top" secondItem="S7o-e9-maV" secondAttribute="bottom" constant="30" id="pBy-lK-fbS"/>
+                            <constraint firstItem="bXe-Nx-OEZ" firstAttribute="leading" secondItem="Y19-4u-Qzm" secondAttribute="trailing" constant="20" id="qED-Ac-YtO"/>
+                            <constraint firstItem="DhI-zC-5v1" firstAttribute="leading" secondItem="xe8-SK-iFA" secondAttribute="leading" constant="20" id="r82-3p-0Yf"/>
+                            <constraint firstItem="jIJ-dN-2Jm" firstAttribute="top" secondItem="qc8-Gz-f6X" secondAttribute="bottom" constant="20" id="tj0-LT-DLu"/>
+                            <constraint firstItem="XFa-0e-gSy" firstAttribute="leading" secondItem="xe8-SK-iFA" secondAttribute="leading" constant="20" id="vKr-Qa-SlR"/>
+                            <constraint firstItem="S7o-e9-maV" firstAttribute="leading" secondItem="rsp-bg-ScG" secondAttribute="trailing" constant="20" id="zzi-3F-ee9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xe8-SK-iFA"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Qnm-6x-aNb"/>
+                    <navigationItem key="navigationItem" title="Disease" largeTitleDisplayMode="never" id="Qnm-6x-aNb"/>
+                    <connections>
+                        <outlet property="diabetes" destination="XFa-0e-gSy" id="ZjP-cB-QE1"/>
+                        <outlet property="heartDisease" destination="Y19-4u-Qzm" id="1Oa-gU-bqA"/>
+                        <outlet property="hypertension" destination="Nx7-w1-XKh" id="D8w-4V-mZr"/>
+                        <outlet property="lungDisease" destination="DhI-zC-5v1" id="yqy-Ue-Pyf"/>
+                        <outlet property="nextScreen" destination="2Xt-Ws-Hvh" id="S8u-d9-ISK"/>
+                        <outlet property="noneOfTheAbove" destination="rsp-bg-ScG" id="w15-zA-CXN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vC7-gI-vg2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="90"/>
+            <point key="canvasLocation" x="1113" y="80"/>
         </scene>
     </scenes>
 </document>
