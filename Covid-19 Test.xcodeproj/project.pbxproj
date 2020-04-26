@@ -60,6 +60,7 @@
 		C11830D824558A9400474593 /* settingLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingLauncher.swift; sourceTree = "<group>"; };
 		C11830DA24558B7600474593 /* settingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingCell.swift; sourceTree = "<group>"; };
 		C11830DC24558C0300474593 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		C11830DE2455AC5000474593 /* Payload.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = Payload.ipa; sourceTree = "<group>"; };
 		C12FBB56245438CE00B52C71 /* homeBottomNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeBottomNav.swift; sourceTree = "<group>"; };
 		C12FBB58245438EA00B52C71 /* covid19UpdatesBottomNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = covid19UpdatesBottomNav.swift; sourceTree = "<group>"; };
 		C12FBB5B24543A9200B52C71 /* SelfAsses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelfAsses.storyboard; sourceTree = "<group>"; };
@@ -139,6 +140,7 @@
 				C11830DC24558C0300474593 /* BaseCell.swift */,
 				C11830DA24558B7600474593 /* settingCell.swift */,
 				C11830D824558A9400474593 /* settingLauncher.swift */,
+				C11830DE2455AC5000474593 /* Payload.ipa */,
 				C14BDADD2453041A00A4FB4D /* Covid-19 Test */,
 				C14BDAF42453041C00A4FB4D /* Covid-19 TestTests */,
 				C14BDAFF2453041C00A4FB4D /* Covid-19 TestUITests */,
