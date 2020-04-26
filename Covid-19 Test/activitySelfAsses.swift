@@ -37,7 +37,6 @@ class activitySelfAsses: UIViewController {
     
     @IBAction func travel(_ sender: Any) {
         ref.child("activity").setValue("Yes")
-        dismiss(animated: true, completion: nil)
         performSegue(withIdentifier: "bottomNav", sender: nil)
     }
     @IBAction func worker(_ sender: Any) {
