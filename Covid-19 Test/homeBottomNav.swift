@@ -53,6 +53,10 @@ class homeBottomNav: UIViewController {
         levelOfInfection()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tabBarController?.tabBar.isHidden = false
+    }
     
     @objc func genderIcon(){
         
@@ -143,13 +147,7 @@ class homeBottomNav: UIViewController {
     }
     
 
-    @IBAction func logout(_ sender: Any) {
-        URLCache.shared.removeAllCachedResponses()
-                  
-        try! Auth.auth().signOut()
-                  
-        self.performSegue(withIdentifier: "logout", sender: self)
-    }
+    
     
     @objc func lowInfection(){
         colorView.backgroundColor = .systemGreen

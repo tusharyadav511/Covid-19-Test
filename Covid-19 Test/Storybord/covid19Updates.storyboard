@@ -30,19 +30,64 @@
                     <view key="view" contentMode="scaleToFill" id="IMN-QH-OC7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yw-m4-82d">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7yw-m4-82d" firstAttribute="top" secondItem="02J-UQ-H8N" secondAttribute="top" id="7gG-zE-ikX"/>
+                            <constraint firstItem="02J-UQ-H8N" firstAttribute="trailing" secondItem="7yw-m4-82d" secondAttribute="trailing" id="GtC-dD-dkX"/>
+                            <constraint firstItem="7yw-m4-82d" firstAttribute="leading" secondItem="02J-UQ-H8N" secondAttribute="leading" id="Ode-qt-oHa"/>
+                            <constraint firstItem="02J-UQ-H8N" firstAttribute="bottom" secondItem="7yw-m4-82d" secondAttribute="bottom" id="tmR-01-seN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="02J-UQ-H8N"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="COVID Updates" image="virus_glyph" id="R7d-Sf-XIv"/>
-                    <navigationItem key="navigationItem" title="COVID Updates" id="Qpe-Ia-Dax"/>
+                    <navigationItem key="navigationItem" title="COVID Updates" id="Qpe-Ia-Dax">
+                        <barButtonItem key="rightBarButtonItem" title="setting" image="gear" catalog="system" id="nhh-L5-2i5">
+                            <connections>
+                                <action selector="setting:" destination="crv-TF-RhB" id="B00-se-9w3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="7yw-m4-82d" id="WZo-X2-Zd8"/>
+                        <segue destination="xy0-2Y-ZGb" kind="presentation" identifier="logout" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="06t-oF-59c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzr-4A-JLK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23" y="80"/>
         </scene>
+        <!--Main-->
+        <scene sceneID="bqu-h8-v6K">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="xy0-2Y-ZGb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YOY-Tr-hZ8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fXi-PZ-sLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="80"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="PLs-2k-nfA">
+            <objects>
+                <viewControllerPlaceholder id="Phh-jt-qFp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l0C-mX-RCV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157" y="413"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="gear" catalog="system" width="64" height="58"/>
         <image name="virus_glyph" width="30" height="30"/>
     </resources>
 </document>

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5D6036B74E8B571B5A97B4B8 /* Pods_Covid_19_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05C945BBF8DF5A459065D52 /* Pods_Covid_19_Test.framework */; };
+		C11830D924558A9400474593 /* settingLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11830D824558A9400474593 /* settingLauncher.swift */; };
+		C11830DB24558B7600474593 /* settingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11830DA24558B7600474593 /* settingCell.swift */; };
+		C11830DD24558C0300474593 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11830DC24558C0300474593 /* BaseCell.swift */; };
 		C12FBB57245438CE00B52C71 /* homeBottomNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FBB56245438CE00B52C71 /* homeBottomNav.swift */; };
 		C12FBB59245438EA00B52C71 /* covid19UpdatesBottomNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FBB58245438EA00B52C71 /* covid19UpdatesBottomNav.swift */; };
 		C12FBB5C24543A9200B52C71 /* SelfAsses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12FBB5B24543A9200B52C71 /* SelfAsses.storyboard */; };
@@ -54,6 +57,9 @@
 /* Begin PBXFileReference section */
 		209108991093E45EE1564999 /* Pods-Covid-19 Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid-19 Test.release.xcconfig"; path = "Target Support Files/Pods-Covid-19 Test/Pods-Covid-19 Test.release.xcconfig"; sourceTree = "<group>"; };
 		B05C945BBF8DF5A459065D52 /* Pods_Covid_19_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid_19_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11830D824558A9400474593 /* settingLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingLauncher.swift; sourceTree = "<group>"; };
+		C11830DA24558B7600474593 /* settingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingCell.swift; sourceTree = "<group>"; };
+		C11830DC24558C0300474593 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		C12FBB56245438CE00B52C71 /* homeBottomNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeBottomNav.swift; sourceTree = "<group>"; };
 		C12FBB58245438EA00B52C71 /* covid19UpdatesBottomNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = covid19UpdatesBottomNav.swift; sourceTree = "<group>"; };
 		C12FBB5B24543A9200B52C71 /* SelfAsses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelfAsses.storyboard; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 		C14BDAD22453041A00A4FB4D = {
 			isa = PBXGroup;
 			children = (
+				C11830DC24558C0300474593 /* BaseCell.swift */,
+				C11830DA24558B7600474593 /* settingCell.swift */,
+				C11830D824558A9400474593 /* settingLauncher.swift */,
 				C14BDADD2453041A00A4FB4D /* Covid-19 Test */,
 				C14BDAF42453041C00A4FB4D /* Covid-19 TestTests */,
 				C14BDAFF2453041C00A4FB4D /* Covid-19 TestUITests */,
@@ -400,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C14BDB1524532FE700A4FB4D /* personDetails.swift in Sources */,
+				C11830D924558A9400474593 /* settingLauncher.swift in Sources */,
 				C12FBB872454918400B52C71 /* diseaseHistory.swift in Sources */,
 				C12FBB5E24543BA900B52C71 /* healthSymptoms.swift in Sources */,
 				C12FBB8424546CBA00B52C71 /* BEMCheckBoxGroup.m in Sources */,
@@ -408,6 +418,8 @@
 				C12FBB892454B13A00B52C71 /* activitySelfAsses.swift in Sources */,
 				C12FBB59245438EA00B52C71 /* covid19UpdatesBottomNav.swift in Sources */,
 				C12FBB8324546CBA00B52C71 /* BEMPathManager.m in Sources */,
+				C11830DB24558B7600474593 /* settingCell.swift in Sources */,
+				C11830DD24558C0300474593 /* BaseCell.swift in Sources */,
 				C14BDAE32453041A00A4FB4D /* ViewController.swift in Sources */,
 				C14BDB1324532FD200A4FB4D /* signUp.swift in Sources */,
 				C14BDADF2453041A00A4FB4D /* AppDelegate.swift in Sources */,

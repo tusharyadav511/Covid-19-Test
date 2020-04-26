@@ -31,14 +31,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zB-e9-W5P">
-                                <rect key="frame" x="184" y="720" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Logout"/>
-                                <connections>
-                                    <action selector="logout:" destination="nCw-Zi-48s" eventType="touchUpInside" id="uNu-HG-ICY"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OvP-JQ-yFI">
                                 <rect key="frame" x="0.0" y="44" width="414" height="1207"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -285,22 +277,11 @@
                         <outlet property="profileIcon" destination="ezJ-YT-CFA" id="G0G-dZ-E9G"/>
                         <outlet property="status" destination="tRY-lb-EtV" id="jak-kS-wnk"/>
                         <outlet property="webLoad" destination="ouK-Vs-NKH" id="F0R-UG-mxY"/>
-                        <segue destination="Pqq-ZA-OZ8" kind="presentation" identifier="logout" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="DTh-Dy-3ED"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDa-JB-Xan" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-320" y="-146.62668665667167"/>
-        </scene>
-        <!--Main-->
-        <scene sceneID="Et1-ax-Ydg">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="Pqq-ZA-OZ8" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Sgn-sV-95i"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JR8-8S-wJC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-281" y="347"/>
+            <point key="canvasLocation" x="-386" y="-959"/>
         </scene>
         <!--SelfAsses-->
         <scene sceneID="UKi-AW-cxC">
